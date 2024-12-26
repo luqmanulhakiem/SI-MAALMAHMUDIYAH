@@ -48,7 +48,7 @@
                                                 <td>{{$item->nama}}</td>
                                                 <td>{{$item->nis}}</td>
                                                 <td>{{$item->nik}}</td>
-                                                <td>{{$item->ttl}}</td>
+                                                <td>{{$item->tempat_lahir}}, {{ \Carbon\Carbon::parse($item->tanggal_lahir)->translatedFormat('j F Y') }}</td>
                                                 <td>{{$item->jenis_kelamin}}</td>
                                                 <td>{{$item->alamat ?? '-'}}</td>
                                                 <td>

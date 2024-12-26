@@ -33,7 +33,7 @@
                         <div class="card-header">
                             <div class="card-title">Edit Data</div>
                             <div class="text-end">
-                                <div class="btn btn-sm btn-secondary"><i class="bi-camera"></i> Update Foto</div>
+                                {{-- <div class="btn btn-sm btn-secondary"><i class="bi-camera"></i> Update Foto</div> --}}
                             </div>
                         </div> <!--end::Header--> <!--begin::Form-->
                         <form method="POST" enctype="multipart/form-data" action="{{route('db.guru.update', ['id' => $data->id])}}"> <!--begin::Body-->
@@ -66,7 +66,10 @@
                                 </div>
                                 <div class="mb-3"> 
                                     <label class="form-label">Tempat, Tanggal Lahir*</label> 
-                                    <input type="text" value="{{$data->ttl}}" name="ttl" class="form-control" placeholder="Contoh: Sampang, 2 September 2006" required>
+                                    <div class="input-group">
+                                        <input type="text" name="tempat_lahir" value="{{$data->tempat_lahir}}" class="form-control" placeholder="Contoh: Sampang" required>
+                                        <input type="date" name="tanggal_lahir" value="{{$data->tanggal_lahir}}" class="form-control" placeholder="Contoh:2 September 2006" required>
+                                    </div>
                                 </div>
                                 <div class="mb-3"> 
                                     <label class="form-label">Gender*</label> 

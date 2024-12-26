@@ -26,7 +26,7 @@
     </div>
   </section>
 
-  <section class="ftco-section testimony-section bg-light" id="tentangkami">
+  {{-- <section class="ftco-section testimony-section bg-light" id="tentangkami">
     <div class="container">
       <div class="row justify-content-center mb-5 pb-2">
         <div class="col-md-8 text-center heading-section ftco-animate">
@@ -38,14 +38,14 @@
       </div>
      
     </div>
-  </section>
+  </section> --}}
 
   <section class="ftco-section ftco-counter img" id="section-counter" style="background-image: url(images/bg_4.jpg);" data-stellar-background-ratio="0.5">
 	  <div class="container">
 		  <div class="row justify-content-center mb-5 pb-2">
 		<div class="col-md-8 text-center heading-section heading-section-black ftco-animate">
-		  <h2 class="mb-4"><span>Telah Berdiri Sejak</span> 20 Tahun</h2>
-      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Recusandae, laboriosam.</p>
+		  {{-- <h2 class="mb-4"><span>Statistik Total</h2> --}}
+      {{-- <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Recusandae, laboriosam.</p> --}}
 		</div>
 	  </div>	
 		  <div class="row d-md-flex align-items-center justify-content-center">

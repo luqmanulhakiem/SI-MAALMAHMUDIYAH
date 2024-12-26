@@ -26,7 +26,8 @@ class GuruPostRequest extends FormRequest
             'foto' => 'nullable|file|mimes:png,jpg,jpeg',
             'nik' => 'required',
             'nama' => 'required',
-            'ttl' => 'required',
+            'tempat_lahir' => 'required',
+            'tanggal_lahir' => 'required',
             'jenis_kelamin' => 'required',
             'alamat' => '',
         ];

@@ -47,14 +47,20 @@
                                             <tr class="align-middle">
                                                 <td>{{$number++}}</td>
                                                 <td>
-                                                    <div class="ratio ratio-1x1">
-                                                        <img src="{{asset('storage/guru/'. $item->foto)}}" alt="Foto" class="img-fluid rounded">
-                                                      </div>
+                                                    @if ($item->foto == null)
+                                                        <div class="ratio ratio-1x1">
+                                                            <img src="{{asset('assets/images/user.png')}}" alt="a" class="img-fluid rounded">
+                                                        </div>
+                                                    @else
+                                                        <div class="ratio ratio-1x1">
+                                                            <img src="{{asset('storage/guru/'. $item->foto)}}" alt="Foto" class="img-fluid rounded">
+                                                        </div>
+                                                    @endif
                                                 </td>
                                                 <td>{{$item->nama}}</td>
                                                 <td>{{$item->nip}}</td>
                                                 <td>{{$item->nik}}</td>
-                                                <td>{{$item->ttl}}</td>
+                                                <td>{{$item->tempat_lahir}}, {{ \Carbon\Carbon::parse($item->tanggal_lahir)->translatedFormat('j F Y') }}</td>
                                                 <td>{{$item->jenis_kelamin}}</td>
                                                 <td>{{$item->alamat ?? '-'}}</td>
                                                 <td>

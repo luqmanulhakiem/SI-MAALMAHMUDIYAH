@@ -13,10 +13,11 @@ return new class extends Migration
     {
         Schema::create('siswas', function (Blueprint $table) {
             $table->id();
-            $table->integer('nis');
-            $table->integer('nik');
+            $table->bigInteger('nis')->nullable();
+            $table->bigInteger('nik')->nullable();
             $table->string('nama');
-            $table->string('ttl');
+            $table->string('tempat_lahir')->nullable();
+            $table->date('tanggal_lahir')->nullable();
             $table->enum('jenis_kelamin', ['L', 'P']);
             $table->text('alamat')->nullable();
             $table->timestamps();

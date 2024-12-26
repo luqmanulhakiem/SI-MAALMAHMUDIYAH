@@ -59,7 +59,10 @@
                                 </div>
                                 <div class="mb-3"> 
                                     <label class="form-label">Tempat, Tanggal Lahir*</label> 
-                                    <input type="text" name="ttl" class="form-control" placeholder="Contoh: Sampang, 2 September 2006" required>
+                                    <div class="input-group">
+                                        <input type="text" name="tempat_lahir" class="form-control" placeholder="Contoh: Sampang" required>
+                                        <input type="date" name="tanggal_lahir" class="form-control" placeholder="Contoh:2 September 2006" required>
+                                    </div>
                                 </div>
                                 <div class="mb-3"> 
                                     <label class="form-label">Gender*</label> 

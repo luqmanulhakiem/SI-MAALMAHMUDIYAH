@@ -7,7 +7,7 @@
 	  <div class="row no-gutters slider-text align-items-center justify-content-center">
 		<div class="col-md-9 ftco-animate text-center">
 		  <h1 class="mb-2 bread">Pengajar</h1>
-		  <p class="breadcrumbs"><span class="mr-2"><a href="/">Home <i class="ion-ios-arrow-forward"></i></a></span> <span>Pengajar <i class="ion-ios-arrow-forward"></i></span></p>
+		  <p class="breadcrumbs"><span class="mr-2"><a href="/">Beranda <i class="ion-ios-arrow-forward"></i></a></span> <span>Pengajar <i class="ion-ios-arrow-forward"></i></span></p>
 		</div>
 	  </div>
 	</div>
@@ -20,9 +20,16 @@
 					@foreach ($guru as $item)
 						<div class="col-md-6 col-lg-3 ftco-animate">
 							<div class="staff">
+								@if ($item->foto == null)
 								<div class="img-wrap d-flex align-items-stretch">
-									<div class="img align-self-stretch" style="background-image: url({{asset('storage/guru/' . $item->foto)}});"></div>
+									<div class="img align-self-stretch" style="background-image: url({{asset('assets/images/user.png')}});"></div>
 								</div>
+							@else
+							<div class="img-wrap d-flex align-items-stretch">
+								<div class="img align-self-stretch" style="background-image: url({{asset('storage/guru/' . $item->foto)}});"></div>
+							</div>
+							@endif
+								
 								<div class="text pt-3 text-center">
 									<h3>{{$item->nama}}</h3>
 									<span class="position mb-2">Teacher</span>

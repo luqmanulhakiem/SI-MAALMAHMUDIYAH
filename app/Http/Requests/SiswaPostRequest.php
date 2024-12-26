@@ -25,7 +25,8 @@ class SiswaPostRequest extends FormRequest
             'nis' => 'required',
             'nik' => 'required',
             'nama' => 'required',
-            'ttl' => 'required',
+            'tempat_lahir' => 'required',
+            'tanggal_lahir' => 'required',
             'jenis_kelamin' => 'required',
             'alamat' => '',
         ];

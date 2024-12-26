@@ -58,8 +58,11 @@
                                     <input type="text" value="{{$data->nama}}" name="nama" class="form-control" placeholder="Nama Siswa" required>
                                 </div>
                                 <div class="mb-3"> 
-                                    <label class="form-label">Tempat, Tanggal Lahir*</label> 
-                                    <input type="text" value="{{$data->ttl}}" name="ttl" class="form-control" placeholder="Contoh: Sampang, 2 September 2006" required>
+                                    <label class="form-label">Tempat, Tanggal Lahir*</label>
+                                    <div class="input-group">
+                                        <input type="text" name="tempat_lahir" value="{{$data->tempat_lahir}}" class="form-control" placeholder="Contoh: Sampang" required>
+                                        <input type="date" name="tanggal_lahir" value="{{$data->tanggal_lahir}}" class="form-control" placeholder="Contoh:2 September 2006" required>
+                                    </div>
                                 </div>
                                 <div class="mb-3"> 
                                     <label class="form-label">Gender*</label> 

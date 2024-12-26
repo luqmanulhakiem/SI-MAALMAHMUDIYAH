@@ -44,7 +44,8 @@ class GuruController extends Controller
             'nip' => $data['nip'],
             'nik' => $data['nik'],
             'nama' => $data['nama'],
-            'ttl' => $data['ttl'],
+            'tempat_lahir' => $data['tempat_lahir'],
+            'tanggal_lahir' => $data['tanggal_lahir'],
             'jenis_kelamin' => $data['jenis_kelamin'],
             'alamat' => $data['alamat'],
             'foto' => $filename,
@@ -76,7 +77,8 @@ class GuruController extends Controller
                 'nip' => $data['nip'],
                 'nik' => $data['nik'],
                 'nama' => $data['nama'],
-                'ttl' => $data['ttl'],
+                'tempat_lahir' => $data['tempat_lahir'],
+                'tanggal_lahir' => $data['tanggal_lahir'],
                 'jenis_kelamin' => $data['jenis_kelamin'],
                 'alamat' => $data['alamat'],
             ]);
@@ -90,10 +92,14 @@ class GuruController extends Controller
                 }
                 $data['foto']->storeAs('guru/', $guru->foto);
                 return redirect()->route('db.guru');
+            } else {
+                $filename = 'CDN-' . Str::random(10) . '.webp';
+                $data['foto']->storeAs('guru/', $filename);
+                $guru->update([
+                    'foto' => $filename,
+                ]);
+                return redirect()->route('db.guru');
             }
-            $filename = 'CDN-' . Str::random(10) . '.webp';
-            $data['foto']->storeAs('guru/', $filename);
-            return redirect()->route('db.guru');
         }
 
         return redirect()->route('db.guru');

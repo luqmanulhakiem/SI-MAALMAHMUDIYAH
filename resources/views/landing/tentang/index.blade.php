@@ -7,7 +7,7 @@
 	  <div class="row no-gutters slider-text align-items-center justify-content-center">
 		<div class="col-md-9 ftco-animate text-center">
 		  <h1 class="mb-2 bread">Tentang Kami</h1>
-		  <p class="breadcrumbs"><span class="mr-2"><a href="/">Home <i class="ion-ios-arrow-forward"></i></a></span> <span>Tentang Kami <i class="ion-ios-arrow-forward"></i></span></p>
+		  <p class="breadcrumbs"><span class="mr-2"><a href="/">Beranda <i class="ion-ios-arrow-forward"></i></a></span> <span>Tentang Kami <i class="ion-ios-arrow-forward"></i></span></p>
 		</div>
 	  </div>
 	</div>
@@ -18,15 +18,18 @@
 			  <div class="row">
 				  <div class="col-md-7 wrap-about py-5 pr-md-4 ftco-animate">
 						<h2 class="mb-4">Visi</h2>
-						<p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Eligendi atque voluptatum esse maxime at ad placeat debitis nemo. Ratione, officiis.</p>
-						<p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ratione quos accusantium sit ad neque? Saepe quisquam nam commodi, atque voluptatem dignissimos. Dolores doloribus perferendis ad?</p>
+						<p>mewujudkan insan yang religius, berkualitas dalam IPTEK dan Humanis.</p>
 				  </div>
 			  </div>
 			  <div class="row">
 				<div class="col-md-7 wrap-about py-5 pr-md-4 ftco-animate">
 					  <h2 class="mb-4">Misi</h2>
-					  <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Eligendi atque voluptatum esse maxime at ad placeat debitis nemo. Ratione, officiis.</p>
-					  <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ratione quos accusantium sit ad neque? Saepe quisquam nam commodi, atque voluptatem dignissimos. Dolores doloribus perferendis ad?</p>
+					  <ol>
+						<li>⁠menumbuhkan semangat belajar untuk pengmebangan IPTEK dan IMTAQ </li>
+						<li>⁠Mewujudkan kegiatan pembelajaran yang menyenangkan, kreatifdan religius</li>
+						<li>Menumbuhkan semangat pengamalan ajaran islam dalam perilaku sehari-hari</li>
+						<li>Menjadikan semua warga sekolah yang memiliki kepeduliaan terhadap diri, lingkungandan beretika</li>
+					  </ol>
 				</div>
 			</div>
 		  </div>

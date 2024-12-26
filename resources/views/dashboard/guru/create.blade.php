@@ -59,11 +59,14 @@
                                 </div>
                                 <div class="mb-3"> 
                                     <label class="form-label">Nama*</label> 
-                                    <input type="text" name="nama" class="form-control" placeholder="Nama Siswa" required>
+                                    <input type="text" name="nama" class="form-control" placeholder="Nama Guru" required>
                                 </div>
                                 <div class="mb-3"> 
                                     <label class="form-label">Tempat, Tanggal Lahir*</label> 
-                                    <input type="text" name="ttl" class="form-control" placeholder="Contoh: Sampang, 2 September 2006" required>
+                                    <div class="input-group">
+                                        <input type="text" name="tempat_lahir" class="form-control" placeholder="Contoh: Sampang" required>
+                                        <input type="date" name="tanggal_lahir" class="form-control" placeholder="Contoh:2 September 2006" required>
+                                    </div>
                                 </div>
                                 <div class="mb-3"> 
                                     <label class="form-label">Gender*</label> 
@@ -75,7 +78,7 @@
                                 </div>
                                 <div class="mb-3"> 
                                     <label class="form-label">Alamat</label> 
-                                    <textarea type="text" name="alamat" class="form-control" placeholder="Alamat Siswa"></textarea>
+                                    <textarea type="text" name="alamat" class="form-control" placeholder="Alamat Guru"></textarea>
                                 </div>
                             </div> <!--end::Body--> <!--begin::Footer-->
                             <div class="card-footer"> <button type="submit" class="btn btn-primary">Submit</button> </div> <!--end::Footer-->
