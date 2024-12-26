@@ -32,11 +32,11 @@
                         <div class="info-box-content"> <span class="info-box-text">Guru</span> <span class="info-box-number">{{$guru}}</span> </div> <!-- /.info-box-content -->
                     </div> <!-- /.info-box -->
                 </div> <!-- /.col --> <!-- fix for small devices only --> <!-- <div class="clearfix hidden-md-up"></div> -->
-                <div class="col-12 col-sm-6 col-md-3">
+                {{-- <div class="col-12 col-sm-6 col-md-3">
                     <div class="info-box"> <span class="info-box-icon text-bg-warning shadow-sm"> <i class="bi bi-person"></i> </span>
                         <div class="info-box-content"> <span class="info-box-text">Siswa Alumni</span> <span class="info-box-number">0</span> </div> <!-- /.info-box-content -->
                     </div> <!-- /.info-box -->
-                </div> <!-- /.col --> <!-- fix for small devices only --> <!-- <div class="clearfix hidden-md-up"></div> -->
+                </div> <!-- /.col --> <!-- fix for small devices only --> <!-- <div class="clearfix hidden-md-up"></div> --> --}}
             </div> <!--end::Row--> <!--begin::Row-->
         </div> <!--end::Container-->
     </div> <!--end::App Content-->
